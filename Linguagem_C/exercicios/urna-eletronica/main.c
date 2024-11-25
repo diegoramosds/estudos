@@ -8,20 +8,25 @@ struct Candidato {
 
 int votar(struct Candidato candidatos[], int totalCandidatos) {
     int voto;
-    printf("Digite o número do candidato (1 a 99): ");
+    printf("Candidatos disponíveis:\n");
+    for (int i = 0; i < totalCandidatos; i++) {
+    printf("%s - (Número %d)\n", candidatos[i].nome ,candidatos[i].numero);
+    }
+    printf("Digite o número do candidato: ");
     scanf("%d", &voto);
-    int encontrado = 0;
     for (int i = 0; i < totalCandidatos; i++) {
         if (candidatos[i].numero == voto) {
             candidatos[i].votos++;
-            encontrado = 1;
             printf("Voto computado para %s!\n", candidatos[i].nome);
             return 1;
         }
     }
-    if (encontrado) {
-        printf("Número de candidato inválido!\n");
-        return 0;
+
+    for (int i = 0; i < totalCandidatos; i++) {
+        if (candidatos[i].numero != voto) {
+            printf("Número de candidato inválido!\n");
+            return 0;
+        }
     }
     return 0;
 }
