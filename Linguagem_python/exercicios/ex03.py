@@ -36,7 +36,6 @@ while True:
             else:
                 print("Fila vazia.")
 
-
         elif opcao == '4':
             print("Sistema encerrado. Obrigado por utilizar!")
             break
