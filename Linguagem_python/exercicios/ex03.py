@@ -16,15 +16,15 @@ contador_senha = 0
 while True:
         opcao = menu()
         if opcao == '1':
-            contador_senha = 1
+            contador_senha += 1
             senha = f"A{contador_senha}"
-            fila.push(senha)
+            fila.append(senha)
             print(f"Senha {senha} retirada com sucesso!")
 
 
         elif opcao == '2':
             if fila:
-                senha_chamada = popleft()
+                senha_chamada = fila.popleft()
                 print(f"Atenção! Senha chamada: {senha_chamada}")
             else:
                 print("Fila vazia. Nenhuma senha para chamar.")
@@ -32,7 +32,7 @@ while True:
 
         elif opcao == '3':
             if fila:
-                print("Fila atual de senhas: ", fila.list)
+                print("Fila atual de senhas: ", list(fila))
             else:
                 print("Fila vazia.")
 
