@@ -21,6 +21,7 @@ while True:
             fila.append(senha)
             print(f"Senha {senha} retirada com sucesso!")
 
+
         elif opcao == '2':
             if fila:
                 senha_chamada = fila.popleft()
@@ -28,15 +29,18 @@ while True:
             else:
                 print("Fila vazia. Nenhuma senha para chamar.")
 
+
         elif opcao == '3':
             if fila:
                 print("Fila atual de senhas: ", list(fila))
             else:
                 print("Fila vazia.")
 
+
         elif opcao == '4':
             print("Sistema encerrado. Obrigado por utilizar!")
             break
+
 
         else:
             print("Opção inválida. Tente novamente.")
