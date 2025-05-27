@@ -41,6 +41,5 @@ while True:
             print("Sistema encerrado. Obrigado por utilizar!")
             break
 
-
         else:
             print("Opção inválida. Tente novamente.")
