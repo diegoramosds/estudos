@@ -29,7 +29,6 @@ while True:
             else:
                 print("Fila vazia. Nenhuma senha para chamar.")
 
-
         elif opcao == '3':
             if fila:
                 print("Fila atual de senhas: ", list(fila))
