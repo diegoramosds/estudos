@@ -21,6 +21,7 @@ while True:
             fila.append(senha)
             print(f"Senha {senha} retirada com sucesso!")
 
+
         elif opcao == '2':
             if fila:
                 senha_chamada = fila.popleft()
