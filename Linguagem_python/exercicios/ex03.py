@@ -12,7 +12,6 @@ def menu():
 fila = deque()
 contador_senha = 0
 
-
 while True:
         opcao = menu()
         if opcao == '1':
