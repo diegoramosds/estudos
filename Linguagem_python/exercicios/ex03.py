@@ -9,7 +9,6 @@ def menu():
         return input("Escolha uma opção: ")
 
 
-
 fila = deque()
 contador_senha = 0
 
